@@ -1,0 +1,13 @@
+.fakeimg {
+    height: 200px;
+    background-image: url(../src/g.gif)
+  }
+  .beige{
+      background-color: #face3d;
+  }
+  .dirtyWhite{
+      background-color: rgb(150, 145, 140);
+  }
+  .h2:hover{
+    transform: rotateY(360deg);
+  }
