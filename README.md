@@ -40,8 +40,13 @@ Carpetas:
 /********************************************************************************************************************************************************************
 12/04/2022:
 Cosas por hacer: 
+
 -Generalizar metodo de medida(VW-VH)
+
 -Añadir funcion al formulario.(Attributos(required,alert,validacion...etc)
+
 -Hacer una pagina para calcular presupuesto
+
 -Carousel para la fundadora **MUY IMPORTANTE - pedir permiso.
+
 
