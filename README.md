@@ -36,3 +36,17 @@ Carpetas:
     -Lleva ficheros que complimenta los ficheros de BOOTSTRAP. Realiza funciones del .carousel y .cards.
 -src:
     -Contiene fotos de los proyectos,ejemplos,icono,logo, y colores que hemos usado en la pagina.
+    
+/********************************************************************************************************************************************************************
+12/04/2022:
+Cosas por hacer: 
+
+-Generalizar metodo de medida(VW-VH)
+
+-Añadir funcion al formulario.(Attributos(required,alert,validacion...etc)
+
+-Hacer una pagina para calcular presupuesto
+
+-Carousel para la fundadora **MUY IMPORTANTE - pedir permiso.
+
+
