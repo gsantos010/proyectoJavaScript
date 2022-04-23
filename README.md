@@ -49,4 +49,10 @@ Cosas por hacer:
 
 -Carousel para la fundadora **MUY IMPORTANTE - pedir permiso.
 
+23/04/2022:
+Cosas por hacer: 
+
+-Añadir funcion al formulario.(Attributos(required,alert,validacion...etc)
+-Completar funciones de la pagina del presupuesto.
+-Carousel para la fundadora **MUY IMPORTANTE - pedir permiso.
 
