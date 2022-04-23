@@ -53,6 +53,8 @@ Cosas por hacer:
 Cosas por hacer: 
 
 -Añadir funcion al formulario.(Attributos(required,alert,validacion...etc)
+
 -Completar funciones de la pagina del presupuesto.
+
 -Carousel para la fundadora **MUY IMPORTANTE - pedir permiso.
 
