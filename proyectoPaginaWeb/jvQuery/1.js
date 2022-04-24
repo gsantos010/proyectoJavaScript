@@ -16,11 +16,28 @@ function blancoColorFondo(){
     bg.style.backgroundColor =`#ffffff`;
 
 }
-//Gayleeee - Presupuesto
+
+//Gayleeee - Presupuesto - 22-4-2022
+
+
 let listaGastos = document.getElementById("presupuesto");
 let listaServicios = [];
 let node;
-let gastosTotal=0;
+let gastosTotal=Number(0);
+let gastosContenedor = document.getElementById("gastosTotal");
+
+//Recibe un parametro de numero que esta pre-introducido en su parte HTML
+//Segun eleccion del usuario , se crea un nodo nuevo de "span" con clases de bootstrap
+//Añade el nodo al <div> del HTML, y pasar el precioServicio al otro funcion para actualizar el gasto total
+
+//24-4-2025
+//añadir el opcion de borrar el servicio
+//funcion que recibe 2 parametros,  el ID del nodo que se ha creado con funcion de agregarServicio()
+//y el precio del servicio del nodo, el id sirve para identificar el elemento que queremos eliminar
+//el precio para actualizar el gastos total.
+
+//PAGINA PRESUPUESTO ACABADO.
+
 function agregarServicio(numeroServicio){
     let nombre;
     let precioServicio;
@@ -31,9 +48,11 @@ function agregarServicio(numeroServicio){
             node = document.createElement("span");
             node.setAttribute("class","badge beigeC w-75 p-3 mt-1");
             node.setAttribute("id","pintar");
+            node.setAttribute("onclick",`removerServicio("pintar",${precioServicio})`);
             node.textContent = `${nombre} €${precioServicio}`;
             listaGastos.appendChild(node);
             gastosAgregar(precioServicio);
+            
             break;
         case 2:
             nombre="Reformar Edificio";
@@ -41,6 +60,7 @@ function agregarServicio(numeroServicio){
             node = document.createElement("span");
             node.setAttribute("class","badge beigeC w-75 p-3 m-1");
             node.setAttribute("id","reformar");
+            node.setAttribute("onclick",`removerServicio("reformar",${precioServicio})`);
             node.textContent = `${nombre} €${precioServicio}`;
             listaGastos.appendChild(node);
             gastosAgregar(precioServicio);
@@ -51,6 +71,7 @@ function agregarServicio(numeroServicio){
             node = document.createElement("span");
             node.setAttribute("class","badge beigeC w-75 p-3 m-1");
             node.setAttribute("id","jardin");
+            node.setAttribute("onclick",`removerServicio("jardin",${precioServicio})`);
             node.textContent = `${nombre} €${precioServicio}`;
             listaGastos.appendChild(node);
             gastosAgregar(precioServicio);
@@ -61,6 +82,7 @@ function agregarServicio(numeroServicio){
             node = document.createElement("span");
             node.setAttribute("class","badge beigeC w-75 p-3 m-1");
             node.setAttribute("id","mantenimiento");
+            node.setAttribute("onclick",`removerServicio("mantenimiento",${precioServicio})`);
             node.textContent = `${nombre} €${precioServicio}`;
             listaGastos.appendChild(node);
             gastosAgregar(precioServicio);
@@ -71,6 +93,7 @@ function agregarServicio(numeroServicio){
             node = document.createElement("span");
             node.setAttribute("class","badge beigeC w-75 p-3 m-1");
             node.setAttribute("id","destino");
+            node.setAttribute("onclick",`removerServicio("destino",${precioServicio})`);
             node.textContent = `${nombre} €${precioServicio}`;
             listaGastos.appendChild(node);
             gastosAgregar(precioServicio);
@@ -81,6 +104,7 @@ function agregarServicio(numeroServicio){
             node = document.createElement("span");
             node.setAttribute("class","badge beigeC w-75 p-3 m-1");
             node.setAttribute("id","asiaticos");
+            node.setAttribute("onclick",`removerServicio("asiaticos",${precioServicio})`);
             node.textContent = `${nombre} €${precioServicio}`;
             listaGastos.appendChild(node);
             gastosAgregar(precioServicio);
@@ -91,6 +115,7 @@ function agregarServicio(numeroServicio){
             node = document.createElement("span");
             node.setAttribute("class","badge beigeC w-75 p-3 m-1");
             node.setAttribute("id","peons");
+            node.setAttribute("onclick",`removerServicio("peons",${precioServicio})`);
             node.textContent = `${nombre} €${precioServicio}/hora`;
             listaGastos.appendChild(node);
             gastosAgregar(precioServicio);
@@ -99,7 +124,15 @@ function agregarServicio(numeroServicio){
     }
 }
 
+//Recibe un parametro, el precio del servicio.
+//Sumar lo con la variable en ambito global y actualizar lo en el html 
 function gastosAgregar(precio){
-    gastosTotal+=precio;
-    let gastosContenedor = document.getElementById("gastosTotal").innerHTML="TOTAL €"+gastosTotal;
+   gastosTotal+=precio;
+   gastosContenedor.innerHTML=`TOTAL €${gastosTotal}`;
+}
+
+function removerServicio(id,precioServicio){
+   let remover = document.getElementById(`${id}`);
+   remover.remove();
+   gastosAgregar(-precioServicio);
 }
