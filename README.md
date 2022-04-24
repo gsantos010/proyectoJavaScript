@@ -58,3 +58,9 @@ Cosas por hacer:
 
 -Carousel para la fundadora **MUY IMPORTANTE - pedir permiso.
 
+
+24/04/2022: Cosas por hacer:
+
+-Añadir funcion al formulario.(Attributos(required,alert,validacion...etc)
+
+-Carousel para la fundadora **MUY IMPORTANTE - pedir permiso.
