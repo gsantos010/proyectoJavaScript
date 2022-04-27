@@ -49,6 +49,8 @@ Cosas por hacer:
 
 -Carousel para la fundadora **MUY IMPORTANTE - pedir permiso.
 
+-Borrar ficheros de sobra y arreglar las partes del codigo que lleva clase equivocada
+
 23/04/2022:
 Cosas por hacer: 
 
