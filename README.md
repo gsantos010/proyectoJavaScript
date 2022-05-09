@@ -25,7 +25,7 @@ Mateu ha realizado:
 -La páginas de mantenimiento
 -La pagina de reformas
 -Estilo de NAV-BAR y FOOTER
-
+-ha corregido todos los tamaños al mismo tipo (solo se han corregido los del css personalizado, los de bootstrap y demás librerias se han dejado igual), se han puetso todos a % o vw.
 ## Ficheros
 Hay 5 ficheros de con el extension .html que corresponde cada pagina que lleva el web.
 
@@ -41,12 +41,6 @@ Carpetas:
 12/04/2022:
 Cosas por hacer: 
 
--Generalizar metodo de medida(VW-VH)
-
 -Añadir funcion al formulario.(Attributos(required,alert,validacion...etc)
-
--Hacer una pagina para calcular presupuesto
-
--Carousel para la fundadora **MUY IMPORTANTE - pedir permiso.
 
 
