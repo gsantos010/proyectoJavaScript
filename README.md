@@ -26,6 +26,7 @@ Mateu ha realizado:
 -La pagina de reformas
 -Estilo de NAV-BAR y FOOTER
 -ha corregido todos los tamaños al mismo tipo (solo se han corregido los del css personalizado, los de bootstrap y demás librerias se han dejado igual), se han puetso todos a % o vw.
+-La validación del formulario, aunque hay cosas que no he conseguido arreglar.
 ## Ficheros
 Hay 5 ficheros de con el extension .html que corresponde cada pagina que lleva el web.
 
@@ -38,9 +39,6 @@ Carpetas:
     -Contiene fotos de los proyectos,ejemplos,icono,logo, y colores que hemos usado en la pagina.
     
 /********************************************************************************************************************************************************************
-12/04/2022:
-Cosas por hacer: 
 
--Añadir funcion al formulario.(Attributos(required,alert,validacion...etc)
 
 
